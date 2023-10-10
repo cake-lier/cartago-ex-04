@@ -9,6 +9,8 @@ mas hello_world {
     }
     workspace w0 {
         artifact buffer: BoundedBuffer(10)
+
+        // artifact buffer: BoundedBufferSolution(10)
     }
 
     asl-path: "src/main/jason"
