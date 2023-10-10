@@ -1,5 +1,15 @@
 mas hello_world {
-    agent hello_world_agent
+    agent producer_agent {
+        instances: 10
+        join: w0
+    }
+    agent consumer_agent {
+        instances: 10
+        join: w0
+    }
+    workspace w0 {
+        artifact buffer: BoundedBuffer(10)
+    }
 
     asl-path: "src/main/jason"
     java-path: "src/main/cartago"
