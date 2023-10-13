@@ -1,22 +1,24 @@
+package io.github.cakelier;
+
 import cartago.Artifact;
 
 public class BoundedBuffer extends Artifact {
     private int bufferCount;
     private int size;
 
-    void init(final int size) {
+    private void init(final int size) {
         this.bufferCount = 0;
         this.size = size;
     }
 
     /* Add your code for referencing the guard here. */
-    void put() {
+    public void put() {
         this.bufferCount++;
         System.out.println(this.bufferCount);
     }
 
     /* Add your code for referencing the guard here. */
-    void take() {
+    public void take() {
         this.bufferCount--;
         System.out.println(this.bufferCount);
     }

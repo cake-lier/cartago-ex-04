@@ -1,4 +1,4 @@
-mas hello_world {
+mas exercise_04 {
     agent producer_agent {
         instances: 10
         join: w0
@@ -8,9 +8,9 @@ mas hello_world {
         join: w0
     }
     workspace w0 {
-        artifact buffer: BoundedBuffer(10)
+        artifact buffer: io.github.cakelier.BoundedBuffer(10)
 
-        // artifact buffer: BoundedBufferSolution(10)
+        // artifact buffer: io.github.cakelier.BoundedBufferSolution(10)
     }
 
     asl-path: "src/main/jason"
