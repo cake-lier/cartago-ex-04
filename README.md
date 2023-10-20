@@ -1,4 +1,4 @@
-# JaCaMo by exercises — Exercise 04 — Operations with guards
+# CArtAgO by exercises — Exercise 04 — Operations with guards
 
 In this exercise, ten "producers" agents and ten "consumers" agents produce and consume items from a "BoundedBuffer." 
 You are requested to exploit guarded operations such that consumers' "take"
